@@ -23,7 +23,7 @@ class LoadingViewController: UIViewController, WKUIDelegate {
         locationApi.getSources { [weak self] (result) in
             DispatchQueue.main.async {
                 print("!!!\(result)")
-                guard let response = try? result.get(), response.country.lowercased() == "ru" else {
+                guard let response = try? result.get(), response.country.lowercased() != "ru" else {
                     self?.showWebView()
                     let myRequest = URLRequest(url: self!.myURL!)
                     self!.webView.load(myRequest)
