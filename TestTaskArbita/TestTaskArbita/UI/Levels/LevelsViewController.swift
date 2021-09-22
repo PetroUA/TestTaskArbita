@@ -21,8 +21,6 @@ class LevelsViewController: UIViewController {
         return viewController as! LevelsViewController
     }
     
-    
-    
     @objc func buttonAction(sender: UIButton!) {
         if let text = sender.titleLabel?.text, let number = Int(text) {
             let tilesStoryboard = TilesViewController.inistantiateViewController(levelConfiguration: levelNumberController.getLevel(numberOfLevel: number))

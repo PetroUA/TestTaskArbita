@@ -14,13 +14,15 @@
 		AB2BA32026F0F8ED00C9399C /* LevelNumberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2BA31F26F0F8ED00C9399C /* LevelNumberController.swift */; };
 		AB9A097926EA6A9E00E7B793 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9A097826EA6A9E00E7B793 /* AppDelegate.swift */; };
 		AB9A097B26EA6A9E00E7B793 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9A097A26EA6A9E00E7B793 /* SceneDelegate.swift */; };
-		AB9A097D26EA6A9E00E7B793 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9A097C26EA6A9E00E7B793 /* ViewController.swift */; };
 		AB9A098226EA6AA100E7B793 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB9A098126EA6AA100E7B793 /* Assets.xcassets */; };
 		AB9A098D26EA6B3000E7B793 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9A098C26EA6B3000E7B793 /* Launch Screen.storyboard */; };
 		AB9A099926EA70A700E7B793 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9A099826EA70A700E7B793 /* Tile.swift */; };
 		AB9A09A126EA7BF600E7B793 /* LevelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9A09A026EA7BF600E7B793 /* LevelsViewController.swift */; };
-		AB9A09A326EBAACA00E7B793 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9A09A226EBAACA00E7B793 /* Main.storyboard */; };
 		ABB8401426EE441E002B088E /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB8401326EE441E002B088E /* Game.swift */; };
+		ABBBE4D426FA38AA00411FC4 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBBE4D326FA38AA00411FC4 /* LoadingViewController.swift */; };
+		ABBBE4D626FA38C100411FC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABBBE4D526FA38C100411FC4 /* Main.storyboard */; };
+		ABBBE4D826FA441300411FC4 /* LocationApiResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBBE4D726FA441300411FC4 /* LocationApiResponses.swift */; };
+		ABBBE4DA26FA46FB00411FC4 /* LocationApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBBE4D926FA46FB00411FC4 /* LocationApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,14 +35,16 @@
 		AB9A097526EA6A9E00E7B793 /* TestTaskArbita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTaskArbita.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB9A097826EA6A9E00E7B793 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB9A097A26EA6A9E00E7B793 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AB9A097C26EA6A9E00E7B793 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AB9A098126EA6AA100E7B793 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB9A098626EA6AA100E7B793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB9A098C26EA6B3000E7B793 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		AB9A099826EA70A700E7B793 /* Tile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
 		AB9A09A026EA7BF600E7B793 /* LevelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsViewController.swift; sourceTree = "<group>"; };
-		AB9A09A226EBAACA00E7B793 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		ABB8401326EE441E002B088E /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		ABBBE4D326FA38AA00411FC4 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		ABBBE4D526FA38C100411FC4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		ABBBE4D726FA441300411FC4 /* LocationApiResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationApiResponses.swift; sourceTree = "<group>"; };
+		ABBBE4D926FA46FB00411FC4 /* LocationApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationApi.swift; sourceTree = "<group>"; };
 		B27638E33AA462C20E764BC6 /* Pods-TestTaskArbita.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskArbita.release.xcconfig"; path = "Target Support Files/Pods-TestTaskArbita/Pods-TestTaskArbita.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +124,8 @@
 				AB9A099826EA70A700E7B793 /* Tile.swift */,
 				ABB8401326EE441E002B088E /* Game.swift */,
 				AB2BA31F26F0F8ED00C9399C /* LevelNumberController.swift */,
+				ABBBE4D726FA441300411FC4 /* LocationApiResponses.swift */,
+				ABBBE4D926FA46FB00411FC4 /* LocationApi.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -127,8 +133,8 @@
 		AB9A099326EA6F3500E7B793 /* StartPage */ = {
 			isa = PBXGroup;
 			children = (
-				AB9A097C26EA6A9E00E7B793 /* ViewController.swift */,
-				AB9A09A226EBAACA00E7B793 /* Main.storyboard */,
+				ABBBE4D326FA38AA00411FC4 /* LoadingViewController.swift */,
+				ABBBE4D526FA38C100411FC4 /* Main.storyboard */,
 			);
 			path = StartPage;
 			sourceTree = "<group>";
@@ -219,10 +225,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB9A09A326EBAACA00E7B793 /* Main.storyboard in Resources */,
 				AB9A098226EA6AA100E7B793 /* Assets.xcassets in Resources */,
 				AB9A098D26EA6B3000E7B793 /* Launch Screen.storyboard in Resources */,
 				AB2BA31E26F0F88600C9399C /* ChoseLevelStoryboard.storyboard in Resources */,
+				ABBBE4D626FA38C100411FC4 /* Main.storyboard in Resources */,
 				AB2BA31C26F0928800C9399C /* TilesStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,13 +282,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB9A097D26EA6A9E00E7B793 /* ViewController.swift in Sources */,
 				AB9A097926EA6A9E00E7B793 /* AppDelegate.swift in Sources */,
 				AB9A099926EA70A700E7B793 /* Tile.swift in Sources */,
 				AB2BA31A26F0916800C9399C /* TilesViewController.swift in Sources */,
 				AB9A097B26EA6A9E00E7B793 /* SceneDelegate.swift in Sources */,
+				ABBBE4D826FA441300411FC4 /* LocationApiResponses.swift in Sources */,
+				ABBBE4D426FA38AA00411FC4 /* LoadingViewController.swift in Sources */,
 				AB9A09A126EA7BF600E7B793 /* LevelsViewController.swift in Sources */,
 				AB2BA32026F0F8ED00C9399C /* LevelNumberController.swift in Sources */,
+				ABBBE4DA26FA46FB00411FC4 /* LocationApi.swift in Sources */,
 				ABB8401426EE441E002B088E /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

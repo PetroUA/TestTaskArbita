@@ -16,6 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Time left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIK-Eu-LLF">
+                                <rect key="frame" x="264" y="0.0" width="130" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="CYB-Yz-1OA">
                                 <rect key="frame" x="32" y="76" width="350" height="754"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
@@ -25,23 +31,29 @@
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="CYB-Yz-1OA" secondAttribute="trailing" constant="32" id="I24-Il-ZTM"/>
+                            <constraint firstItem="RIK-Eu-LLF" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="Mzo-vw-lm6"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="CYB-Yz-1OA" secondAttribute="bottom" priority="999" constant="32" id="Stn-ic-uga"/>
                             <constraint firstItem="CYB-Yz-1OA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="hXc-Pi-VoF"/>
+                            <constraint firstAttribute="trailing" secondItem="RIK-Eu-LLF" secondAttribute="trailing" constant="20" symbolic="YES" id="pbb-1M-5dZ"/>
                             <constraint firstItem="CYB-Yz-1OA" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="32" id="u2j-yL-HWV"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="buttonsStackView" destination="CYB-Yz-1OA" id="gkb-1R-cyw"/>
+                        <outlet property="label" destination="RIK-Eu-LLF" id="1Zw-31-lBX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="53"/>
+            <point key="canvasLocation" x="131.8840579710145" y="52.901785714285715"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

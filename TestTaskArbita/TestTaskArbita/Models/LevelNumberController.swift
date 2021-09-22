@@ -30,10 +30,10 @@ class LevelNumberController {
         
         if (numberOfLevel + 1) * (numberOfLevel + 1) % 2 == 0 {
             
-            levelConfiguration = LevelConfiguration(numberOfColumns: numberOfLevel + 1, numberOfRows: numberOfLevel + 1, isLastLevel: isLastLevel)
+            levelConfiguration = LevelConfiguration(levelNumber: numberOfLevel, numberOfColumns: numberOfLevel + 1, numberOfRows: numberOfLevel + 1, isLastLevel: isLastLevel)
         } else {
             
-            levelConfiguration = LevelConfiguration(numberOfColumns: numberOfLevel, numberOfRows: numberOfLevel + 1, isLastLevel: isLastLevel)
+            levelConfiguration = LevelConfiguration(levelNumber: numberOfLevel, numberOfColumns: numberOfLevel, numberOfRows: numberOfLevel + 1, isLastLevel: isLastLevel)
         }
         return levelConfiguration
     }

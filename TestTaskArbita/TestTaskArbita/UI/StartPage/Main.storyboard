@@ -8,49 +8,43 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Loading View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="LoadingViewController" customModule="TestTaskArbita" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0l-ea-ZCp">
-                                <rect key="frame" x="166" y="418" width="82" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="Start">
-                                    <color key="titleColor" systemColor="systemRedColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="fP5-1B-LWX" kind="presentation" id="B7G-Fs-oEG"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TestTaskArbita" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="Zas-El-0rw">
+                                <rect key="frame" x="82.5" y="280.5" width="249" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="eZE-jX-oxh">
+                                <rect key="frame" x="188.5" y="434.5" width="37" height="37"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="eZE-jX-oxh" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="IOC-rK-p7W"/>
+                            <constraint firstItem="Zas-El-0rw" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="2:3" id="W29-el-rwW"/>
+                            <constraint firstItem="Zas-El-0rw" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="mIR-2F-Vac"/>
+                            <constraint firstItem="eZE-jX-oxh" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="nlb-jq-0U0"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="eZE-jX-oxh" id="zGi-Xo-9KY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="104" y="53"/>
-        </scene>
-        <!--ChoseLevelStoryboard-->
-        <scene sceneID="5mZ-nB-oks">
-            <objects>
-                <viewControllerPlaceholder storyboardName="ChoseLevelStoryboard" id="fP5-1B-LWX" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="RYr-aW-SuW"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oI4-Qd-SkA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="676" y="53"/>
+            <point key="canvasLocation" x="106" y="13"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

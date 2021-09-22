@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 struct LevelConfiguration {
+    let levelNumber: Int
     let numberOfColumns: Int
     let numberOfRows: Int
     let isLastLevel: Bool
@@ -69,8 +70,23 @@ class TilesViewController: UIViewController {
     var emojiChoices = ["🕷", "🎃", "👻", "💀", "👽", "🐍", "🦅", "🦉", "🦇", "🐗", "🐺", "🐴", "🐝", "🦋", "🐞", "🐜", "🦈", "🐳", "🦎", "🦖", "🦒", "🐅", "🦑"]
     
     var cardButtons: [UIButton] = []
+    var timer:Timer?
+    var timeLeft = 60
+    @IBOutlet weak var label: UILabel!
+    @objc func onTimerFires()
+    {
+        timeLeft -= 1
+        if timeLeft <= 0 {
+            self.dismiss(animated: true, completion: nil)
+            timer?.invalidate()
+            timer = nil
+        }
+        label.text = "\(timeLeft) seconds left"
+
+    }
     
     func updateViewFromModel() {
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTimerFires), userInfo: nil, repeats: true)
         var gameEnd = true
         for index in cardButtons.indices {
             let button = cardButtons[index]
@@ -93,8 +109,15 @@ class TilesViewController: UIViewController {
             }
         }
         if gameEnd {
-            self.dismiss(animated: true, completion: nil)
-        }
+            let presenter = presentingViewController
+            self.dismiss(animated: true, completion: {
+                let levelNumberController = LevelNumberController(numberOfLevels: 6)
+                let tilesStoryboard = TilesViewController.inistantiateViewController(
+                    levelConfiguration: levelNumberController.getLevel(numberOfLevel: self.levelConfiguration.levelNumber + 1)
+                )
+                presenter?.present(tilesStoryboard, animated: true, completion: nil)
+            })
+        } 
     }
     
     
